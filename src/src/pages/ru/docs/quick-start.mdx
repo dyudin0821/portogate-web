@@ -25,11 +25,40 @@ lang: 'ru'
 <div class="mb-6">
   <h2 class="text-2xl font-semibold text-slate-100 mb-2">Шаг 2: Получение настроек</h2>
   <p class="text-slate-300 mb-2">После оплаты вы получите:</p>
+  
+  <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-lg p-4 my-4">
+    <div class="flex items-start mb-3">
+      <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+        </svg>
+      </div>
+      <div class="flex-1">
+        <h4 class="font-bold text-blue-300 mb-2">✅ Subscription URL (Рекомендуется)</h4>
+        <p class="text-slate-300 text-sm mb-2">
+          <strong>Subscription URL</strong> — это специальная ссылка для автоматического обновления настроек подключения.
+        </p>
+        <ul class="text-slate-300 text-sm space-y-1">
+          <li>✓ Автоматическое получение новых серверов</li>
+          <li>✓ Нет ограничений по трафику</li>
+          <li>✓ Всегда актуальные настройки</li>
+          <li>✓ Не нужно вручную обновлять конфигурацию</li>
+          <li class="text-red-300">⚠️ <strong>Запрещено</strong> использование торрентов</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <ul class="list-disc list-inside text-slate-300 space-y-1">
-    <li>Ссылку для подключения (начинается с <code class="bg-slate-700 px-2 py-1 rounded text-sm">vless://...</code>)</li>
+    <li><strong class="text-blue-300">Subscription URL</strong> — ссылка для автообновления (начинается с <code class="bg-slate-700 px-2 py-1 rounded text-sm">https://...</code>)</li>
+    <li>Ссылку для разового подключения (начинается с <code class="bg-slate-700 px-2 py-1 rounded text-sm">vless://...</code>)</li>
     <li>QR-код для быстрой настройки</li>
     <li>Инструкции для вашего устройства</li>
   </ul>
+
+  <div class="bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-3 my-3 text-sm text-slate-300">
+    <strong class="text-yellow-300">💡 Совет:</strong> Используйте <strong>Subscription URL</strong> вместо обычной <code>vless://</code> ссылки для автоматического обновления серверов и настроек.
+  </div>
 </div>
 
 <div class="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-xl p-6 my-8">
@@ -93,8 +122,12 @@ V2Box — это удобный клиент для работы с VLESS-сое
 <div class="bg-slate-800/30 rounded-lg p-4 border border-slate-600 my-4">
   <ul class="space-y-2 text-slate-300">
     <li class="flex items-center">
+      <span class="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>
+      <strong class="text-cyan-300">Subscription URL</strong> — ссылку для автообновления (начинается с <code class="bg-slate-700 px-2 py-1 rounded text-sm">https://...</code>) — <strong>Рекомендуется!</strong>
+    </li>
+    <li class="flex items-center">
       <span class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
-      Ссылку (начинается с <code class="bg-slate-700 px-2 py-1 rounded text-sm">vless://...</code>)
+      Обычную ссылку (начинается с <code class="bg-slate-700 px-2 py-1 rounded text-sm">vless://...</code>)
     </li>
     <li class="flex items-center">
       <span class="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
@@ -108,8 +141,37 @@ V2Box — это удобный клиент для работы с VLESS-сое
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
   <div class="bg-slate-800/30 rounded-lg p-5 border border-slate-600">
     <h4 class="text-lg font-semibold text-slate-100 mb-3 flex items-center">
-      <span class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm mr-2">1</span>
-      По ссылке
+      <span class="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center text-white text-sm mr-2">1</span>
+      Subscription URL (Рекомендуется)
+    </h4>
+    <div class="space-y-3 text-slate-300">
+      <p class="flex items-start">
+        <span class="text-cyan-400 mr-2">1.</span>
+        Скопируйте <strong class="text-cyan-300">Subscription URL</strong> (начинается с <code class="bg-slate-700 px-2 py-1 rounded text-sm">https://...</code>)
+      </p>
+      <p class="flex items-start">
+        <span class="text-cyan-400 mr-2">2.</span>
+        Откройте V2Box → нажмите <strong>+</strong> (в правом верхнем углу)
+      </p>
+      <p class="flex items-start">
+        <span class="text-cyan-400 mr-2">3.</span>
+        Выберите <strong>"Add Subscription"</strong> или <strong>"Import Subscription"</strong>
+      </p>
+      <p class="flex items-start">
+        <span class="text-cyan-400 mr-2">4.</span>
+        Вставьте Subscription URL → нажмите <strong>"Confirm"</strong>
+      </p>
+      <p class="text-xs text-cyan-300 mt-2">
+        ✓ Автоматическое обновление серверов<br/>
+        ✓ Всегда актуальные настройки
+      </p>
+    </div>
+  </div>
+
+  <div class="bg-slate-800/30 rounded-lg p-5 border border-slate-600">
+    <h4 class="text-lg font-semibold text-slate-100 mb-3 flex items-center">
+      <span class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm mr-2">2</span>
+      По обычной ссылке
     </h4>
     <div class="space-y-3 text-slate-300">
       <p class="flex items-start">
@@ -130,26 +192,66 @@ V2Box — это удобный клиент для работы с VLESS-сое
       </p>
     </div>
   </div>
+</div>
 
-  <div class="bg-slate-800/30 rounded-lg p-5 border border-slate-600">
-    <h4 class="text-lg font-semibold text-slate-100 mb-3 flex items-center">
-      <span class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm mr-2">2</span>
-      Через QR-код
-    </h4>
-    <div class="space-y-3 text-slate-300">
-      <p class="flex items-start">
-        <span class="text-purple-400 mr-2">1.</span>
-        В Telegram-боте нажмите кнопку <strong>"Показать QR-код"</strong>
-      </p>
-      <p class="flex items-start">
-        <span class="text-purple-400 mr-2">2.</span>
-        В приложении V2Box нажмите <strong>+</strong> → <strong>"Scan QR Code"</strong>
-      </p>
-      <p class="flex items-start">
-        <span class="text-purple-400 mr-2">3.</span>
-        Наведите камеру на QR-код
-      </p>
+<div class="bg-slate-800/30 rounded-lg p-5 border border-slate-600 my-4">
+  <h4 class="text-lg font-semibold text-slate-100 mb-3 flex items-center">
+    <span class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm mr-2">3</span>
+    Через QR-код
+  </h4>
+  <div class="space-y-3 text-slate-300">
+    <p class="flex items-start">
+      <span class="text-purple-400 mr-2">1.</span>
+      В Telegram-боте нажмите кнопку <strong>"Показать QR-код"</strong>
+    </p>
+    <p class="flex items-start">
+      <span class="text-purple-400 mr-2">2.</span>
+      В приложении V2Box нажмите <strong>+</strong> → <strong>"Scan QR Code"</strong>
+    </p>
+    <p class="flex items-start">
+      <span class="text-purple-400 mr-2">3.</span>
+      Наведите камеру на QR-код
+    </p>
+  </div>
+</div>
+
+<div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-5 my-6">
+  <div class="flex items-start mb-3">
+    <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+      <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+      </svg>
     </div>
+    <div class="flex-1">
+      <h4 class="text-lg font-bold text-blue-300 mb-3">⚙️ Настройка автообновления (для Subscription URL)</h4>
+      <div class="space-y-2 text-slate-300 text-sm">
+        <p class="flex items-start">
+          <span class="w-6 h-6 bg-blue-500/30 rounded-full flex items-center justify-center text-blue-300 text-xs mr-2 flex-shrink-0">1</span>
+          <span>Откройте список профилей в V2Box</span>
+        </p>
+        <p class="flex items-start">
+          <span class="w-6 h-6 bg-blue-500/30 rounded-full flex items-center justify-center text-blue-300 text-xs mr-2 flex-shrink-0">2</span>
+          <span>Нажмите на профиль с подпиской → выберите <strong>"Settings"</strong> или <strong>"Edit"</strong> (⚙️)</span>
+        </p>
+        <p class="flex items-start">
+          <span class="w-6 h-6 bg-blue-500/30 rounded-full flex items-center justify-center text-blue-300 text-xs mr-2 flex-shrink-0">3</span>
+          <span>Включите <strong>"Auto Update"</strong> (автообновление)</span>
+        </p>
+        <p class="flex items-start">
+          <span class="w-6 h-6 bg-blue-500/30 rounded-full flex items-center justify-center text-blue-300 text-xs mr-2 flex-shrink-0">4</span>
+          <span>Установите интервал обновления (рекомендуется <strong>24 часа</strong>)</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-green-500/10 border border-green-500/20 rounded-lg p-3 mt-4">
+    <p class="text-green-300 text-sm flex items-center">
+      <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+      </svg>
+      Готово! Теперь настройки серверов будут обновляться автоматически.
+    </p>
   </div>
 </div>
 

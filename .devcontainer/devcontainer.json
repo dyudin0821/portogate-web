@@ -1,5 +1,5 @@
 {
-	"name": "Python & Typescript",
+	"name": "Typescript",
 	"image": "ghcr.io/prulloac/base:bookworm",
 
 	// Features to add to the Dev Container. More info: https://containers.dev/implementors/features.

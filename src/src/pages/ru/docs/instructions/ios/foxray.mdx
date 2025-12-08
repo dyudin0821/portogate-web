@@ -1,0 +1,208 @@
+---
+layout: '../../../../../layouts/DocsLayout.astro'
+title: 'Foxray для iOS - PortoGate'
+description: 'Инструкция по настройке Foxray на iPhone и iPad'
+lang: 'ru'
+---
+
+<div class="mb-8">
+  <h1 class="text-3xl font-bold text-slate-100 mb-4">📱 Foxray для iOS</h1>
+  <p class="text-slate-300 text-lg">
+    Продвинутый клиент с гибкими настройками для iPhone и iPad
+  </p>
+</div>
+
+<div class="bg-gradient-to-r from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-xl p-6 my-8">
+  <h2 class="text-2xl font-bold text-slate-100 mb-4">🚀 О приложении</h2>
+  <p class="text-slate-300">
+    <strong>Foxray</strong> — мощный VPN-клиент для iOS с поддержкой множества протоколов и расширенными возможностями настройки. Идеален для продвинутых пользователей.
+  </p>
+</div>
+
+## Шаг 1: Установка
+
+<div class="bg-slate-800/50 rounded-lg p-5 border border-slate-700 my-6">
+  <h4 class="text-lg font-semibold text-slate-100 mb-3 flex items-center">
+    <svg class="w-5 h-5 mr-2 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/>
+    </svg>
+    App Store
+  </h4>
+  <p class="text-slate-300 mb-4 text-sm">Для iPhone и iPad</p>
+  <a href="https://apps.apple.com/app/foxray/id6448898396" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="inline-flex items-center px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg transition-colors text-sm">
+    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/>
+    </svg>
+    Скачать
+  </a>
+</div>
+
+## Шаг 2: Получите конфигурацию
+
+<div class="bg-slate-800/30 rounded-lg p-5 border border-slate-600 my-6">
+  <p class="text-slate-300 mb-3">В Telegram-боте <a href="https://t.me/portogate_bot" class="text-blue-400 hover:underline">@portogate_bot</a> после активации подписки получите:</p>
+  <ul class="space-y-2 text-slate-300">
+    <li class="flex items-start">
+      <span class="w-2 h-2 bg-green-400 rounded-full mr-3 mt-2"></span>
+      <span><strong>Subscription URL</strong> — ссылка на подписку для автообновления конфигурации (рекомендуется)</span>
+    </li>
+    <li class="flex items-start">
+      <span class="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-2"></span>
+      <span><strong>Ссылку подключения</strong> — начинается с <code class="bg-slate-700 px-2 py-1 rounded text-sm">vless://...</code> или <code class="bg-slate-700 px-2 py-1 rounded text-sm">vmess://...</code></span>
+    </li>
+    <li class="flex items-start">
+      <span class="w-2 h-2 bg-purple-400 rounded-full mr-3 mt-2"></span>
+      <span><strong>QR-код</strong> — для быстрого импорта</span>
+    </li>
+  </ul>
+</div>
+
+## Шаг 3: Добавьте конфигурацию
+
+### Метод 1: По ссылке подписки (рекомендуется)
+
+<div class="space-y-4 my-6">
+  <div class="bg-slate-800/30 rounded-lg p-4 border border-slate-600">
+    <div class="flex items-center mb-2">
+      <span class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-bold mr-3">1</span>
+      <h4 class="text-lg font-semibold text-slate-100">Скопируйте Subscription URL</h4>
+    </div>
+    <p class="text-slate-300 ml-11">
+      В Telegram-боте нажмите кнопку "Subscription URL" и скопируйте ссылку.
+    </p>
+  </div>
+
+  <div class="bg-slate-800/30 rounded-lg p-4 border border-slate-600">
+    <div class="flex items-center mb-2">
+      <span class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-bold mr-3">2</span>
+      <h4 class="text-lg font-semibold text-slate-100">Откройте Foxray</h4>
+    </div>
+    <p class="text-slate-300 ml-11">
+      Запустите приложение на устройстве.
+    </p>
+  </div>
+
+  <div class="bg-slate-800/30 rounded-lg p-4 border border-slate-600">
+    <div class="flex items-center mb-2">
+      <span class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-bold mr-3">3</span>
+      <h4 class="text-lg font-semibold text-slate-100">Добавьте подписку</h4>
+    </div>
+    <p class="text-slate-300 ml-11">
+      Нажмите <strong>"+"</strong> → <strong>"Add Subscription"</strong> → вставьте скопированную ссылку → <strong>"Save"</strong>.
+    </p>
+  </div>
+
+  <div class="bg-slate-800/30 rounded-lg p-4 border border-slate-600">
+    <div class="flex items-center mb-2">
+      <span class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-bold mr-3">4</span>
+      <h4 class="text-lg font-semibold text-slate-100">Обновите конфигурацию</h4>
+    </div>
+    <p class="text-slate-300 ml-11">
+      Нажмите кнопку обновления рядом с подпиской для загрузки серверов.
+    </p>
+  </div>
+</div>
+
+### Метод 2: QR-код
+
+<div class="space-y-4 my-6">
+  <div class="bg-slate-800/30 rounded-lg p-4 border border-slate-600">
+    <div class="flex items-center mb-2">
+      <span class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm font-bold mr-3">1</span>
+      <h4 class="text-lg font-semibold text-slate-100">Покажите QR-код</h4>
+    </div>
+    <p class="text-slate-300 ml-11">
+      В боте нажмите "Показать QR-код".
+    </p>
+  </div>
+
+  <div class="bg-slate-800/30 rounded-lg p-4 border border-slate-600">
+    <div class="flex items-center mb-2">
+      <span class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm font-bold mr-3">2</span>
+      <h4 class="text-lg font-semibold text-slate-100">Отсканируйте</h4>
+    </div>
+    <p class="text-slate-300 ml-11">
+      В Foxray: <strong>"+"</strong> → <strong>"Scan QR Code"</strong> → наведите камеру на код.
+    </p>
+  </div>
+</div>
+
+### Метод 3: Прямая ссылка
+
+<div class="space-y-4 my-6">
+  <div class="bg-slate-800/30 rounded-lg p-4 border border-slate-600">
+    <div class="flex items-center mb-2">
+      <span class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm font-bold mr-3">1</span>
+      <h4 class="text-lg font-semibold text-slate-100">Скопируйте ссылку</h4>
+    </div>
+    <p class="text-slate-300 ml-11">
+      В Telegram нажмите на ссылку подключения и выберите "Копировать".
+    </p>
+  </div>
+
+  <div class="bg-slate-800/30 rounded-lg p-4 border border-slate-600">
+    <div class="flex items-center mb-2">
+      <span class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm font-bold mr-3">2</span>
+      <h4 class="text-lg font-semibold text-slate-100">Импортируйте</h4>
+    </div>
+    <p class="text-slate-300 ml-11">
+      В Foxray: <strong>"+"</strong> → <strong>"Import from Clipboard"</strong>.
+    </p>
+  </div>
+</div>
+
+## Шаг 4: Подключитесь
+
+<div class="bg-green-500/10 border border-green-500/20 rounded-lg p-6 my-6">
+  <div class="flex items-start">
+    <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center mr-4 mt-1">
+      <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+      </svg>
+    </div>
+    <div class="flex-1">
+      <h4 class="font-semibold text-green-300 mb-3 text-lg">Активация VPN:</h4>
+      <div class="space-y-2 text-slate-300">
+        <p>1. Выберите сервер из списка</p>
+        <p>2. Нажмите кнопку подключения</p>
+        <p>3. При первом запуске iOS запросит разрешение — нажмите <strong>"Allow"</strong></p>
+        <p>4. Подтвердите с помощью Face ID / Touch ID / пароля</p>
+        <p>5. В строке состояния появится значок VPN</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+## Настройки
+
+<div class="bg-slate-800/30 rounded-lg p-5 border border-slate-600 my-6">
+  <h3 class="text-xl font-semibold text-slate-100 mb-4">⚙️ Рекомендуемые настройки</h3>
+  
+  <div class="space-y-4">
+    <div>
+      <h4 class="font-semibold text-slate-200 mb-2">Режим маршрутизации</h4>
+      <p class="text-slate-300 text-sm">
+        <strong>Settings</strong> → <strong>Routing</strong>: выберите <strong>"Rule Based"</strong> с правилами для оптимальной работы.
+      </p>
+    </div>
+    
+    <div>
+      <h4 class="font-semibold text-slate-200 mb-2">Автоподключение</h4>
+      <p class="text-slate-300 text-sm">
+        <strong>Settings</strong> → <strong>"Auto Connect"</strong> для автоматического подключения при запуске.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="flex gap-4 my-8">
+  <a href="/ru/docs/instructions" class="inline-flex items-center px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition-colors">
+    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+    </svg>
+    Все инструкции
+  </a>
+</div>
