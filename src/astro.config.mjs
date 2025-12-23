@@ -26,7 +26,7 @@ export default defineConfig({
   integrations: [mdx()],
   i18n: {
     defaultLocale: 'ru',
-    locales: ['ru', 'en'],
+    locales: ['ru'],
     routing: {
       prefixDefaultLocale: true
     }
