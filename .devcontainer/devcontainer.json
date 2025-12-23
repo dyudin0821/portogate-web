@@ -12,7 +12,7 @@
 		// {"source":"${localWorkspaceFolder}","target":"/workspace","type":"bind"},
 		{
 			"source": "${localEnv:HOME}/.ssh",
-			"target": "/home/node/.ssh",
+			"target": "/home/vscode/.ssh",
 			"type": "bind"
 		}
 	]
